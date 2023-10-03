@@ -41,13 +41,31 @@ if (toDoArr) {
 
 // Event Listeners
 document.querySelector("#clear").addEventListener("click", () => {
-    let testVar = document.querySelectorAll("input[type='checkbox']:checked");
-    testVar.forEach((element, index) => {
-        toDoArr.splice(index, 1);
-        element.parentElement.remove();
-        localStorage.setItem('toDoArr',JSON.stringify(toDoArr));
+    let uncheckedArr = [];
+    
+    let checked = document.querySelectorAll("input[type='checkbox']:checked");
+    checked.forEach((element, index) => {
+        // toDoArr.splice(index, 1);
+    element.parentElement.remove();
     })
-    console.log(testVar);
+    
+    let unchecked = document.querySelectorAll("input[type=checkbox]:not(:checked)");
+    unchecked.forEach((element) => {
+        let testText = element.nextSibling.nodeValue;
+        uncheckedArr.unshift(testText);
+    })
+    
+    // toDoArr.filter((element) => )
+    console.log(toDoArr);
+    // let uncheckedList = document.querySelectorAll("input[type=checkbox]:not(:checked)");
+    // console.log('unchecked: ' + uncheckedList);
+    // let unchecked = document.querySelectorAll("input[type=checkbox]:not(:checked)");
+    // let toDoArr = Array.from(unchecked);
+    localStorage.setItem('toDoArr',JSON.stringify(uncheckedArr))
+    // // Array.from(unchecked).forEach((element) => {
+    // //     localStorage.setItem('toDoArr',JSON.stringify(toDoArr));
+    // })
+    
 
 })
 
