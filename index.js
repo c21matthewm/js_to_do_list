@@ -1,17 +1,24 @@
 console.log('My code is running');
+
 let toDoArr = [];
+let listElement = document.getElementById('toDoList');
+
 const addTask = (task) => {
     toDoArr.push(task);
-    // console.log('first' + toDoArr);
+    // console.log('Arr: ' + toDoArr);
 }
 
-
-let listElement = document.getElementById('toDoList');
 document.querySelector("#submitBtn").addEventListener("click", () => {
-    let newItem = document.getElementById("toDoInput").value;
-    addTask(newItem);
-    console.log('array' + toDoArr);
-   // console.log('NEWITEM' + newItem);
+    const newItem = document.getElementById("toDoInput").value;
+    if(newItem) {
+        addTask(newItem);
+        console.log('Arr: ' + toDoArr);
+    }
+    
+    
+    // addTask(newItem);
+    // console.log('array' + toDoArr);
+   //  console.log('NEWITEM' + newItem);
     // console.log('middle' + toDoArr);
     // if (newItem) {
     //     addTask(newItem);
