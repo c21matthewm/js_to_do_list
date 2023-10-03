@@ -6,7 +6,7 @@ h1 {
     padding: 20px;
   }
 
-ul {
+ol {
     list-style: none;
     text-align: center;
     justify-content: left;
@@ -37,7 +37,7 @@ body {
 
 }
 
-ul {
+ol {
     display:flex;
     flex-direction: column;
     color: rgb(109, 109, 109);
