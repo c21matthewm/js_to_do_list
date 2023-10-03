@@ -19,6 +19,7 @@ document.querySelector("#submitBtn").addEventListener("click", () => {
         newNode.appendChild(checkbox);
         newNode.appendChild(textNode);
         listElement.insertBefore(newNode, listElement.children[0])
+        document.getElementById("toDoInput").value = ''; // re-added so it clears input box
     }
 }
 )
