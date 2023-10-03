@@ -1,8 +1,54 @@
 h1 { 
-    color: purple;
+    color: rgb(110, 110, 110);
+    text-align: center;
+    justify-content: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    padding: 20px;
   }
 
 ul {
     list-style: none;
+    text-align: center;
+    justify-content: left;
 } 
+body {
+    background-color: rgb(243, 236, 226);
 
+    align-items: center;
+    display:flex;
+    flex-direction: column;
+}
+
+#inputs {
+    display: flex;
+    flex-direction: row;
+    padding:10px 20px;
+}
+
+
+#container {
+    display:flex;
+    width:700px;
+    /* flex-direction: column; */
+    padding:30px;
+    margin-top:10px;
+    border: solid 2px rgb(179, 179, 179);
+    /* justify-content: flex-start; */
+
+}
+
+ul {
+    display:flex;
+    flex-direction: column;
+    color: rgb(109, 109, 109);
+
+}
+
+#toDoList li {
+    display: flex;
+    /* align-items: center; */
+}
+
+#toDoList li input[type="checkbox"] {
+    margin-right:10px;
+}
