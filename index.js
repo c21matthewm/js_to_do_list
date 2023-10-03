@@ -33,8 +33,7 @@ document.querySelector("#submitBtn").addEventListener("click", () => {
         newNode.appendChild(textNode);
         listElement.insertBefore(newNode, listElement.children[0])
         document.getElementById("toDoInput").value = ''; 
-        
-        localStorage.setItem('newItem',JSON.stringify(newItem));
+
     }
 
 }
