@@ -3,7 +3,8 @@ h1 {
     text-align: center;
     justify-content: center;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-    padding: 20px;
+    padding: 5% 20px 20px 20px;
+    margin: auto;
   }
 
 ol {
@@ -22,7 +23,7 @@ body {
 #inputs {
     display: flex;
     flex-direction: row;
-    padding:10px 20px;
+    padding:10px;
 }
 
 
@@ -51,4 +52,12 @@ ol {
 
 #toDoList li input[type="checkbox"] {
     margin-right:10px;
+}
+#footer {
+    display:flex;
+    width:600px;
+    align-self: flex-end;
+    justify-content: flex-end;
+    
+
 }
